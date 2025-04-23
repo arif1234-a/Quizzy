@@ -1,5 +1,6 @@
 {
-  "questions": [
+  "questions": {
+    "Math":[
 
     {
       "id": 1,
@@ -70,8 +71,9 @@
       "text": "What is the factorial of 5?",
       "options": ["20", "60", "120", "150"],
       "correctAnswer": "120"
-    },
-
+    }
+    ],
+    "Physics": [
     {
       "id": 11,
       "subject": "Physics",
@@ -141,8 +143,9 @@
       "text": "What is the acceleration due to gravity on Earth?",
       "options": ["9.8 m/s²", "10 m/s²", "8.9 m/s²", "11 m/s²"],
       "correctAnswer": "9.8 m/s²"
-    },
- 
+    }
+],
+"Chemistry" : [
     {
       "id": 21,
       "subject": "Chemistry",
@@ -212,7 +215,9 @@
       "text": "Which element has the highest atomic number?",
       "options": ["Uranium", "Oganesson", "Plutonium", "Radon"],
       "correctAnswer": "Oganesson"
-    },
+    }
+],
+"Biology": [
 
     {
       "id": 31,
@@ -283,8 +288,9 @@
       "text": "What type of blood vessels carry blood away from the heart?",
       "options": ["Arteries", "Veins", "Capillaries", "Lymphatics"],
       "correctAnswer": "Arteries"
-    },
-
+    }
+],
+"Geography":[
     {
       "id": 41,
       "subject": "Geography",
@@ -356,4 +362,5 @@
       "correctAnswer": "Tokyo"
     }
   ]
+}
 }
