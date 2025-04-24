@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState } from "react";
 
 const ResultComponent = ({
   userAnswers,
@@ -59,4 +59,27 @@ const ResultComponent = ({
   );
 };
 
-export default ResultComponent;
+export default ResultComponent;*/
+
+
+import React, { useEffect, useState } from 'react'
+
+function ResultComponent({ userAnswers, subject, userName }) {
+  const [score, setScore] = useState([])
+  const [correctAnswers, setCorrectAnswers] = useState([])
+  const [totalMark , setTotalMark]= useState([])
+  
+  useEffect(() => {
+    fetch(`http://localhost:3000/questions/${selectedSubject}`)
+      .then((res) => res.json())
+      .then((data) => setquestions(data));
+  }, [selectedSubject]);
+
+  const handleCorrectAnswers = (() => {
+    
+  })
+  return (<div></div>);
+}
+
+export default ResultComponent
+
