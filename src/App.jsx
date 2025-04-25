@@ -2,16 +2,14 @@ import { useState } from 'react'
 
 
 import './App.css'
-import Quizpage from './Components/Quizpage'
-import SubjectSelector from './Components/SubjectSelector'
-import ScoreHistory from './Components/ScoreHistory'
+import Homepage from '../pages/homepage'
 
 function App() {
   
 
   return (
     <>
-      <ScoreHistory />
+      <Homepage />
       {/* <SubjectSelector /> */}
       {/* <Quizpage /> */}
     </>

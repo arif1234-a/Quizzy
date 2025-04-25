@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ResultComponent from "./ResultComponent";
+import { useLocation } from 'react-router-dom';
+import NavBar from "./NavBar";
 
-
-function Quizpage({ selectedSubject, userName}) {
+function Quizpage() {
   const [questions, setquestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [results, setResults] = useState(false);
-    // const selectedSubject = "Physics";
-    // const userName= "Arif"
+  const location = useLocation()
+  const {selectedSubject} = location.state
 const handleSubmit = () => {
   console.log(userAnswers);
   setResults(true);
@@ -32,6 +33,7 @@ useEffect(() => {
 
   return (
     <div>
+      <NavBar />
       <h1>Quiz: {selectedSubject}</h1>
       {questions.map((question, index) => (
         <div key={question.id}>
@@ -56,7 +58,7 @@ useEffect(() => {
         <ResultComponent
           userAnswers={userAnswers}
           subject={selectedSubject}
-          userName={userName}
+          // userName={userName}
         />
       )}
     </div>

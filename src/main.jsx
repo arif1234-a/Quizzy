@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Homepage from '../pages/homepage.jsx'
 import Scorepage from '../pages/scorepage.jsx'
 import Quizpage from './Components/Quizpage.jsx'
+import Selectionpage from '../pages/selectionpage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/quizpage",
     element: <Quizpage />,
+  },
+  {
+    path: "/selectionpage",
+    element: <Selectionpage />,
   },
 ]);
 createRoot(document.getElementById('root')).render(

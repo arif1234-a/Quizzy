@@ -1,7 +1,7 @@
 import React from 'react'
 import SubjectSelector from '../src/Components/SubjectSelector'
 
-function selectionpage() {
+function Selectionpage() {
   return (
     <div>
       <SubjectSelector />
@@ -9,4 +9,4 @@ function selectionpage() {
   )
 }
 
-export default selectionpage
+export default Selectionpage;
