@@ -1,14 +1,6 @@
 {
   "scores": [
     {
-      "id": "dfdf",
-      "user": "Arif",
-      "subject": "Physics",
-      "score": 0,
-      "percentage": null,
-      "totalQuestions": 0
-    },
-    {
       "id": "cbdc",
       "user": "Arif",
       "subject": "Physics",
@@ -23,14 +15,6 @@
       "score": 8,
       "percentage": 80,
       "totalQuestions": 10
-    },
-    {
-      "id": "bf6d",
-      "user": "Arif",
-      "subject": "Chemistry",
-      "score": 0,
-      "percentage": null,
-      "totalQuestions": 0
     }
   ]
 }

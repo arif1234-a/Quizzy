@@ -9,7 +9,10 @@ function SubjectSelector() {
     })
     console.log(selectedSubject)
   return (
-    <div>
+      <div>
+          <div>
+              <h1>Pick a subject</h1>
+          </div>
       <button onClick={handleSubjectChange} value="Math">
         Math
       </button>
@@ -24,7 +27,8 @@ function SubjectSelector() {
       </button>
       <button onClick={handleSubjectChange} value="Geography">
         Geography
-      </button>
+          </button>
+          <button>Take Quiz</button>
     </div>
   );
 }
