@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function ResultComponent({ userAnswers, subject }) {
+function ResultComponent({ userAnswers, subject , userName }) {
   const [score, setScore] = useState(0); // Number for total score
   const [correctAnswers, setCorrectAnswers] = useState([]); // Array for correct answers
   const [totalMark, setTotalMark] = useState(0); // Number for maximum score
@@ -29,6 +29,7 @@ useEffect(() => {
   
   const postScore = () => {
     const resultData = {
+      user: userName,
       subject: subject,
       score: score,
       percentage: (score / totalMark) * 100, // Score as a percentage

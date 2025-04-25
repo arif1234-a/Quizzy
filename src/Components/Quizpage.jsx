@@ -8,7 +8,7 @@ function Quizpage() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [results, setResults] = useState(false);
   const location = useLocation()
-  const {selectedSubject} = location.state
+  const {selectedSubject , userName} = location.state
 const handleSubmit = () => {
   console.log(userAnswers);
   setResults(true);
@@ -58,7 +58,7 @@ useEffect(() => {
         <ResultComponent
           userAnswers={userAnswers}
           subject={selectedSubject}
-          // userName={userName}
+          userName={userName}
         />
       )}
     </div>

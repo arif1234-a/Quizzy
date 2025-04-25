@@ -9,11 +9,15 @@ function SubjectSelector() {
        
     })
     console.log(selectedSubject)
+
+    const handleUserName = ((e) => {
+        setUserName(e.target.textContent)
+    })
   return (
     <div>
       <NavBar />
           <div>
-              
+              <input type="text"  onChange={handleUserName}/>
       </div>
       <div>
         <h1>Pick a subject</h1>
@@ -34,7 +38,7 @@ function SubjectSelector() {
         Geography
       </button>
       <br />
-          <Link to={"/quizpage"} state={{ selectedSubject }}>
+          <Link to={"/quizpage"} state={{ selectedSubject , userName }}>
         <button>Take Quiz</button>
       </Link>
     </div>
