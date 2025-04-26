@@ -5,7 +5,6 @@ import NavBar from '../src/Components/NavBar'
 function Scorepage() {
   return (
       <div>
-          <NavBar />
       < ScoreHistory />
     </div>
   )
