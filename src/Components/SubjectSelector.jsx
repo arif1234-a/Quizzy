@@ -16,8 +16,12 @@ function SubjectSelector() {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
       <NavBar />
-      <div>
-        <input type="text" onChange={handleUserName} />
+      <div class="flex items-center justify-center bg-gray-100 m-2">
+        <input
+          type="text"
+          placeholder="Enter your username"
+          className="w-80 px-4 py-2 text-lg text-gray-700 bg-white border-2 border-gray-300 rounded-lg shadow-md focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-300 transition-all duration-300"
+        onChange={handleUserName}/>
       </div>
       <div>
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">

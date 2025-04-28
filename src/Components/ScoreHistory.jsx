@@ -1,35 +1,3 @@
-// import React, { useEffect, useState } from 'react'
-// import NavBar from './NavBar';
-
-// function ScoreHistory() {
-//     const[scores , setScores] = useState([])
-//     useEffect(() => {
-//         fetch("http://localhost:4000/scores")
-//             .then((res) => res.json())
-//             .then((data) => setScores(data))
-//         console.log(scores)
-//     },[])
-//   return (
-//     <div class="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
-//       <NavBar />
-//       <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6">
-//         Your Scores
-//       </h1>
-//       {scores.map((score, index) => (
-//         <div key={index}>
-//           <p>Name:{score.user}</p>
-//           <p>Subject:{score.subject}</p>
-//           <p>Score:{score.score}/{score.totalQuestions}
-//           </p>
-//           <p>Percentage:{score.percentage}%</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default ScoreHistory
-
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 
@@ -42,7 +10,25 @@ function ScoreHistory() {
       .then((data) => setScores(data))
       .catch((err) => console.error(err)); // Handle errors gracefully
   }, []);
+  const deleteScore=((e)=>{
+    fetch(("http://localhost:4000/scores"), {
+  method: 'DELETE', // Specify the request method as DELETE
+  headers: {
+    'Content-Type': 'application/json', // Optional: Specify the content type
+  }
+})
+  .then(response => {
+    if (response.ok) {
+      console.log('Resource deleted successfully!');
+    } else {
+      console.error('Failed to delete the resource:', response.status, response.statusText);
+    }
+  })
+  .catch(error => {
+    console.error('Error during DELETE request:', error);
+  });
 
+  })
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
       <NavBar />
@@ -69,6 +55,7 @@ function ScoreHistory() {
                 Percentage: {score.percentage}%
               </p>
             </div>
+            <button onClick={deleteScore} className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">Delete</button>
           </div>
         ))}
       </div>

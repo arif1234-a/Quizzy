@@ -1,89 +1,11 @@
 {
   "scores": [
     {
-      "id": "16d6",
-      "subject": "Biology",
-      "score": 1,
-      "percentage": 10,
-      "totalQuestions": 10
-    },
-    {
-      "id": "9180",
-      "user": "Arif",
-      "subject": "Math",
-      "score": 0,
-      "percentage": "0.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "7b1e",
-      "user": "Arif",
-      "subject": "Math",
-      "score": 8,
-      "percentage": "80.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "4cfc",
-      "user": "Arif",
-      "subject": "Physics",
-      "score": 10,
-      "percentage": "100.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "358f",
-      "user": "Arif",
-      "subject": "Physics",
-      "score": 10,
-      "percentage": "100.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "b4cb",
-      "user": "Arif",
-      "subject": "Geography",
-      "score": 7,
-      "percentage": "70.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "3999",
+      "id": "2577",
+      "user": "",
       "subject": "Chemistry",
-      "score": 4,
-      "percentage": 40,
-      "totalQuestions": 10
-    },
-    {
-      "id": "29b5",
-      "user": "Arif",
-      "subject": "Physics",
-      "score": 3,
-      "percentage": "30.00",
-      "totalQuestions": 10
-    },
-    {
-      "id": "6837",
-      "user": "",
-      "subject": "Biology",
-      "score": 3,
-      "percentage": 30,
-      "totalQuestions": 10
-    },
-    {
-      "id": "11e4",
-      "user": "",
-      "subject": "Math",
       "score": 0,
-      "percentage": null,
-      "totalQuestions": 0
-    },
-    {
-      "id": "8518",
-      "user": "",
-      "subject": "Physics",
-      "score": 9,
-      "percentage": "90.0",
+      "percentage": "0.0",
       "totalQuestions": 10
     }
   ]
