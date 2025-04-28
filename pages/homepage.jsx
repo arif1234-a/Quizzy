@@ -17,7 +17,7 @@ function Homepage() {
 
       <Link rel="stylesheet" href="" to={"/selectionpage"}>
         <div className="flex flex-wrap justify-center gap-4">
-  <button class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
+  <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
     Start Quiz
           </button>
           </div>
