@@ -1,4 +1,5 @@
 🧠 Quiz App
+
 Welcome to the Quiz App, a sleek, interactive, and lightweight application that challenges users with a variety of questions to test their knowledge. Whether you're a trivia master or just looking for a brain-boosting break, this app has something for everyone!
 
 🌟 Features
@@ -9,6 +10,7 @@ Choose from a variety of question sets – from specific subjects!
 Built for both desktop and mobile – enjoy seamless interaction anywhere.
 
 🔧 Tech Stack
+
 This app was lovingly crafted using:
 
 Frontend: React
